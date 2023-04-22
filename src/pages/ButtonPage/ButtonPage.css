@@ -1,0 +1,190 @@
+.ButtonPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #a0afbd;
+  gap: 30px;
+
+  transition: all ease 1s;
+}
+
+.sun_container {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  height: 150px;
+  padding: 0 15px;
+  border-radius: 150px;
+  background: #1d89b7;
+  box-shadow: -3px -4px 12px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(255, 255, 255, 0.92),
+    inset 0px -1px 12px rgba(0, 0, 0, 0.25),
+    inset 0px 7px 9px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+  position: relative;
+  transition: all ease 1s;
+}
+
+.moon_container {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  height: 150px;
+  padding: 0 15px;
+  border-radius: 150px;
+  background: #081823;
+  box-shadow: -3px -4px 12px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(255, 255, 255, 0.92),
+    inset 0px -1px 12px rgba(0, 0, 0, 0.25),
+    inset 0px 7px 9px rgba(0, 0, 0, 0.25);
+
+  overflow: hidden;
+  position: relative;
+  transition: all ease 1s;
+}
+
+.sun_rays {
+  position: absolute;
+  top: -114px;
+  left: -125px;
+  transition: all ease 1s;
+
+  z-index: 30;
+}
+
+.night_rays {
+  position: absolute;
+  top: -114px;
+  left: 108px;
+  transition: all ease 1s;
+
+  z-index: 30;
+}
+
+.sun_sky_clouds {
+  position: absolute;
+  top: -128px;
+  left: -35px;
+  transition: all ease 1s;
+
+  z-index: 20;
+}
+
+.night_sky_stars {
+  position: absolute;
+  top: 17px;
+  left: -35px;
+  transition: all ease 1s;
+
+  z-index: 40;
+}
+
+.sun {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(4px 7px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 200px;
+  background: #ffde30;
+  box-shadow: inset 0px -4px 4px rgba(150, 129, 22, 0.7),
+    inset 3px 4px 4px rgba(255, 247, 205, 0.85);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: all ease 1s;
+
+  animation: fadeSunIn 1s ease forwards;
+  z-index: 50;
+}
+
+.moon {
+  width: 120px;
+  height: 120px;
+  filter: drop-shadow(4px 7px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 200px;
+  background: #cacaca;
+  box-shadow: inset 0px -6px 4px rgba(126, 126, 125, 0.7),
+    inset 3px 5px 4px rgba(255, 255, 255, 0.85);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: all ease 1s;
+
+  animation: fadeMoonIn 1s ease forwards;
+  z-index: 50;
+}
+
+.sun img {
+  transition: all ease 1s;
+  animation: fadeMoonSpotsOut 1s ease forwards;
+}
+
+.moon img {
+  display: block;
+  transition: all ease 1s;
+  animation: fadeMoonSpotsIn 1s ease forwards;
+}
+
+@keyframes fadeMoonIn {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(210px);
+  }
+}
+
+@keyframes fadeSunIn {
+  0% {
+    transform: translateX(210px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeMoonSpotsIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeMoonSpotsOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  padding: 0 12px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+span {
+  color: red;
+}
