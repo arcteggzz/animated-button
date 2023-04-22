@@ -2,7 +2,7 @@
 
 A quick project to implement a simple animation for a button slider using ReactTS.
 
-LIVE SITE:-
+LIVE SITE:- https://animated-button-dc20031oi-arcteggzz.vercel.app/
 
 ## INSPIRATION BY
 
