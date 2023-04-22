@@ -1,6 +1,6 @@
 import "./ButtonPage.css";
 import moon_spots from "./images/Spots.png";
-import rays from "./images/rays.png";
+import rays from "./images/Rays.png";
 import stars_and_skies from "./images/stars_and_skies.png";
 import { useState } from "react";
 
