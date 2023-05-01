@@ -1,0 +1,18 @@
+.CarouselPage {
+  display: flex;
+  width: 100vw;
+  height: 200vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  border: blue solid 1px;
+}
+
+h2 {
+  width: 45%;
+  border: red solid 1px;
+}
+
+.Carousel_owner {
+  width: 45%;
+}

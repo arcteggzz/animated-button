@@ -1,10 +1,12 @@
 //Pages
-import ButtonPage from "./pages/ButtonPage";
+// import ButtonPage from "./pages/ButtonPage";
+import CarouselPage from "./pages/CarouselPage";
 
 const App = () => {
   return (
     <>
-      <ButtonPage />
+      {/* <ButtonPage /> */}
+      <CarouselPage />
     </>
   );
 };

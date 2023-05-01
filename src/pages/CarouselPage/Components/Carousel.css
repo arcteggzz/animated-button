@@ -1,0 +1,17 @@
+.Carousel_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Carousel_Slide {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  overflow: hidden;
+}
+
+.Carousel_Slide_papi img {
+  width: 100%;
+  height: auto;
+}
